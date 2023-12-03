@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{{.title}}</title>
+   <style>
+      @import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+      body {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         margin: 0;
+         text-align: center;
+         font-family: 'Cascadia Code', sans-serif;
+         background-image: linear-gradient(to right top, #0a6f98, #0092b5, #00b3ad, #00d07f, #5be627);
+      }
+
+      div {
+         padding: 20px;
+         border-radius: 4px;
+         background-color: #f9f9f94e;
+         font-family: 'Cascadia Code', sans-serif;
+      }
+
+      a {
+         color: inherit;
+         text-decoration: inherit;
+      }
+   </style>
+</head>
+
+<body>
+   <div>
+      <h1>{{.name}}</h1>
+      <p>
+         <a href="mailto:{{.email}}">{{.email}}</a>
+      </p>
+      <p>
+         <a href="https://{{.github}}" target="_blank">Github Profile</a>
+      </p>
+      <p>{{.address}}</p>
+   </div>
+</body>
+
+</html>
